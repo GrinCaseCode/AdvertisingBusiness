@@ -545,6 +545,12 @@
 		flex: initial;
 		flex-grow: 1;
 	}
+	.item-advertisement__more,
+	.col-lg-6 .item-advertisement__more,
+	.col-12 .item-advertisement__more {
+		padding: 10px 0;
+		text-align: right;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -586,6 +592,12 @@
 	}
 	.col-12 .item-advertisement__image, .col-lg-6 .item-advertisement__image, .item-advertisement__image {
 		height: 215px;
+	}
+	.slider-billbord .title-big {
+		max-width: 345px;
+	}
+	.services {
+		padding-top: 25px;
 	}
 }
 
