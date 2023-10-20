@@ -29,6 +29,25 @@ $(function(){
 		}
 	});
 
+		$(".nav-sidebar__haschild > a").click(function(e) {
+		e.preventDefault();
+		$(".nav-sidebar__haschild > a").not(this).parent().removeClass("active");
+		$(".nav-sidebar__haschild > a").not(this).siblings("ul").slideUp(200);
+		$(this).parent().toggleClass("active");
+		$(this).siblings("ul").slideToggle(200);
+	});
+
+		$(".unit-sidebar__head").click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		$(this).siblings(".unit-sidebar__content").slideToggle(200);
+	});
+
+$(".btn-main_filter").click(function(e) {
+		e.preventDefault();
+		$(".sidebar-catalog").slideToggle(200);
+	});
+
 	$(".menu-overlay").click(function() {
 		$(".menu-mobile").slideUp(200);
 		$(".sandwich").removeClass("active");
@@ -74,6 +93,64 @@ $(function(){
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
 	});
+
+	$('.slider-for').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.slider-nav',
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+	});
+
+	$('.slider-nav').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		vertical: true,
+		verticalSwiping: true,
+		asNavFor: '.slider-for',
+		touchThreshold: 1000,
+		focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				vertical: false,
+				verticalSwiping: false,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 3,
+				vertical: false,
+				verticalSwiping: false,
+			}
+		}
+		]
+	});
+
+	 $('.btn-main_favorite').click(function(event) {
+    event.preventDefault();
+    $(this).toggleClass('active');
+  }); 
+
+	 $('.tabs li a').click(function(event) {
+    event.preventDefault();
+    $(this).parent().parent().find("li").removeClass('active');
+    $(this).parent().addClass('active');
+    $(this).parents().find(".tab-pane").fadeOut(0);
+    var selectTab = $(this).attr("href");
+    $(selectTab).fadeIn(200);
+  }); 
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
