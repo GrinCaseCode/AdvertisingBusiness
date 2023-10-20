@@ -1356,7 +1356,7 @@ form {
 }
 .page-catalog .col-12 .item-advertisement__image {
 	width: 230px;
-height: 233px;
+	height: 233px;
 }
 .page-catalog {
 	padding-bottom: 30px;
@@ -1368,21 +1368,21 @@ height: 233px;
 	position: sticky;
 }
 .sidebar-catalog::-webkit-scrollbar {
-  -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 .sidebar-catalog::-webkit-scrollbar:vertical {
-  width: 3px;
+	width: 3px;
 }
 .sidebar-catalog::-webkit-scrollbar:horizontal {
-  height: 3px;
+	height: 3px;
 }
 .sidebar-catalog::-webkit-scrollbar-thumb {
-  background-color: #0094FF;
-  border-radius: 10px;
+	background-color: #0094FF;
+	border-radius: 10px;
 }
 .sidebar-catalog::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: #EBEBEB;
+	border-radius: 10px;
+	background-color: #EBEBEB;
 }
 .sorting-catalog {
 	margin-bottom: 37px;
@@ -1403,8 +1403,8 @@ height: 233px;
 	font-weight: 300;
 	color: #5D769D;
 	border-radius: 6px;
-border: 1px solid #EBEBEB;
-background: #FAFAFA;
+	border: 1px solid #EBEBEB;
+	background: #FAFAFA;
 	width: 100%;
 }
 .btn-search {
@@ -1420,16 +1420,16 @@ background: #FAFAFA;
 	position: absolute;
 }
 .item-select .jq-selectbox__select-text {
-height: 48px;
-padding: 0 20px;
-font-size: 14px;
-color: #5D769D;
-border-radius: 6px;
-border: 1px solid #EBEBEB;
-background: #FAFAFA;
-display: flex;
-align-items: center;
-cursor: pointer;
+	height: 48px;
+	padding: 0 20px;
+	font-size: 14px;
+	color: #5D769D;
+	border-radius: 6px;
+	border: 1px solid #EBEBEB;
+	background: #FAFAFA;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
 }
 .sorting-catalog .item-select {
 	width: 335px;
@@ -1437,16 +1437,18 @@ cursor: pointer;
 .sorting-catalog .jq-selectbox {
 	width: 100%;
 }
-.jq-selectbox__dropdown {
+.item-select .jq-selectbox__dropdown {
+	top: 100% !important;
+	bottom: auto !important;
 	border-radius: 6px;
-border: 1px solid #EBEBEB;
-background: #FAFAFA;
+	border: 1px solid #EBEBEB;
+	background: #FAFAFA;
 	width: 100%;
 }
-.jq-selectbox__dropdown li {
+.item-select .jq-selectbox__dropdown li {
 	padding: 10px 20px;
 	font-size: 14px;
-color: #5D769D;
+	color: #5D769D;
 	cursor: pointer;
 }
 .item-select .jq-selectbox__trigger {
