@@ -977,7 +977,10 @@
 		font-size: 13px;
 	}
 	.tabs {
-		font-size: 13px;
+		font-size: 12px;
+	}
+	.tabs a {
+		border-width: 2px;
 	}
 	.slider-nav__item {
 		height: 67px;
@@ -1000,6 +1003,12 @@
 	}
 	.page-catalog .col-12 .item-advertisement__title br {
 		display: none;
+	}
+	.tab-container {
+		padding-top: 15px;
+	}
+	.location-map {
+		margin-bottom: 14px;
 	}
 }
 
