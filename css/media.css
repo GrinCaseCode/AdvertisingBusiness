@@ -1104,6 +1104,9 @@
 	.nav-personal li.active {
 		order: -2;
 	}
+	.nav-personal li a {
+		display: block;
+	}
 	.btn-nav {
 		top: 15px;
 		left: 10px;
