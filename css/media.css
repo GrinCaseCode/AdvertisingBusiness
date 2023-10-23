@@ -578,6 +578,14 @@
 	.row_reviews > div {
 		margin-bottom: 20px;
 	}
+	.item-form_big input {
+		height: 50px;
+		font-size: 14px;
+		padding: 0 15px;
+	}
+	.item-form__subdescr {
+		right: 15px;
+	}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
