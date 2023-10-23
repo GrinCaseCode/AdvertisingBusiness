@@ -1622,7 +1622,6 @@ form {
 .item-checkbox {
 	font-size: 11px;
 	line-height: 14px;
-	min-height: 26px;
 	font-weight: 400;
 	display: flex;
 	text-align: left;
@@ -1637,14 +1636,15 @@ form {
 }
 .item-checkbox label > span {
 	position: relative;
-	padding: 5px 0 0 32px;
+	padding: 5px 0 0 24px;
+		min-height: 24px;
 	display: block;
 	cursor: pointer;
 }
 .item-checkbox label > span:before {
 	content: '';
 	position: absolute;
-	top: 2px;
+	top: 0px;
 	left: 0;
 	width: 24px;
 	height: 24px;
@@ -1655,7 +1655,7 @@ form {
 .item-checkbox label > span:after {
 	content: '';
 	position: absolute;
-	top: 2px;
+	top: 0px;
 	left: 0px;
 	width: 24px;
 	height: 24px;
