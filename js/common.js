@@ -6,9 +6,9 @@ $(document).ready(function() {
 $(function(){
  var topPos = $('.header').offset().top; //topPos - это значение от верха блока до окна браузера
  $(window).scroll(function() {
-  var top = $(document).scrollTop();
-  if (top > topPos) $('.header').addClass('fixed');
-  else $('.header').removeClass('fixed');
+ 	var top = $(document).scrollTop();
+ 	if (top > topPos) $('.header').addClass('fixed');
+ 	else $('.header').removeClass('fixed');
  });
 });
 
@@ -29,7 +29,17 @@ $(function(){
 		}
 	});
 
-		$(".nav-sidebar__haschild > a").click(function(e) {
+
+$(".btn-nav").click(function() {
+		$(this).toggleClass("active");
+		if ($(".nav-personal li:not(.active)").is(":hidden")) {
+			$(".nav-personal li:not(.active)").slideDown(200);
+		} else {
+			$(".nav-personal li:not(.active)").slideUp(200);
+		}
+	});
+
+	$(".nav-sidebar__haschild > a").click(function(e) {
 		e.preventDefault();
 		$(".nav-sidebar__haschild > a").not(this).parent().removeClass("active");
 		$(".nav-sidebar__haschild > a").not(this).siblings("ul").slideUp(200);
@@ -37,13 +47,13 @@ $(function(){
 		$(this).siblings("ul").slideToggle(200);
 	});
 
-		$(".unit-sidebar__head").click(function(e) {
+	$(".unit-sidebar__head").click(function(e) {
 		e.preventDefault();
 		$(this).toggleClass("active");
 		$(this).siblings(".unit-sidebar__content").slideToggle(200);
 	});
 
-$(".btn-main_filter").click(function(e) {
+	$(".btn-main_filter").click(function(e) {
 		e.preventDefault();
 		$(".sidebar-catalog").slideToggle(200);
 	});
@@ -59,16 +69,16 @@ $(".btn-main_filter").click(function(e) {
 		$(this).toggleClass("active");
 	});
 
-		$('.text-inline').each(function() {
-  var textLineCount = $(this)[0].getClientRects().length;
-  var lineClampValue = $(this).parent().css('-webkit-line-clamp');
-  if (textLineCount > lineClampValue) {
-    $(this).parent().addClass('cut');
-  }
-});
-		 $('.item-advertisement__more a').click(function(event) {
+	$('.text-inline').each(function() {
+		var textLineCount = $(this)[0].getClientRects().length;
+		var lineClampValue = $(this).parent().css('-webkit-line-clamp');
+		if (textLineCount > lineClampValue) {
+			$(this).parent().addClass('cut');
+		}
+	});
+	$('.item-advertisement__more a').click(function(event) {
 		event.preventDefault();
-	
+
 		if ($(this).parent().siblings(".item-advertisement__text").hasClass("active")) {
 			$(this).find("span").html("Развернуть");
 			$(this).parent().siblings(".item-advertisement__text").removeClass('active');
@@ -138,19 +148,101 @@ $(".btn-main_filter").click(function(e) {
 		]
 	});
 
-	 $('.btn-main_favorite').click(function(event) {
-    event.preventDefault();
-    $(this).toggleClass('active');
-  }); 
+	$('.slider-services').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		touchThreshold: 1000,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 5,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 4,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				arrows: false,
+				dots: true,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				arrows: false,
+				dots: true,
+			}
+		}
+		]
+	});
 
-	 $('.tabs li a').click(function(event) {
-    event.preventDefault();
-    $(this).parent().parent().find("li").removeClass('active');
-    $(this).parent().addClass('active');
-    $(this).parents().find(".tab-pane").fadeOut(0);
-    var selectTab = $(this).attr("href");
-    $(selectTab).fadeIn(200);
-  }); 
+	$('.slider-portfolio').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		touchThreshold: 1000,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				arrows: false,
+				dots: true,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				arrows: false,
+				dots: true,
+			}
+		}
+		]
+	});
+
+	$('.btn-main_favorite').click(function(event) {
+		event.preventDefault();
+		$(this).toggleClass('active');
+	}); 
+
+	$('.tabs li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(this).parents().find(".tab-pane").fadeOut(0);
+		var selectTab = $(this).attr("href");
+		$(selectTab).fadeIn(200);
+	}); 
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
