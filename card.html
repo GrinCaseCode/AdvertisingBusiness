@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.3" />
-	<link rel="stylesheet" href="css/media.css?ver=1.3" />
+	<link rel="stylesheet" href="css/main.css?ver=1.4" />
+	<link rel="stylesheet" href="css/media.css?ver=1.4" />
 </head>
 <body>
 
@@ -78,7 +78,7 @@
 							<img src="img/basket.svg" alt="alt">
 							<span class="btn-header__hint">Корзина</span>
 						</a>
-						<a href="#" class="btn-main btn-main_page"><img src="img/log.svg" alt="alt">Войти</a>
+						<a href="#modal-login" class="btn-main btn-main_page fancybox"><img src="img/log.svg" alt="alt">Войти</a>
 						<span class='sandwich'>
 							<span class='sw-topper'></span>
 							<span class='sw-bottom'></span>
@@ -364,6 +364,92 @@
 		
 	</div>
 
+	<div id="modal-login" class="modal-block">
+		<div class="modal-wrap">
+			<div class="title-modal">Вход</div>
+			<form>
+				<div class="item-form">
+					<input type="text" placeholder="Ваш логин" required="required">
+				</div>
+				<div class="item-form">
+					<input type="password" placeholder="Ваш пароль" required="required">
+				</div>
+				<div class="line-checkbox">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"/>
+							<span>Запомнить пароль</span>
+						</label>
+					</div>
+					<a href="#" class="link-simple">Забыли пароль?</a>
+				</div>
+				<button class="btn-main">Войти</button>
+			</form>
+			<div class="bottom-login">
+				<div class="title-small">Или войти через</div>
+				<ul class="list-social">
+					<li><a href="#"><i class="fab fa-vk"></i></a></li>
+					<li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+				</ul>
+				<a href="#modal-register" class="link-page fancybox">Зарегистрироваться</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal-register" class="modal-block">
+		<div class="modal-wrap">
+			<div class="title-modal">Регистрация</div>
+			<form>
+				<div class="wrap-steps-register">
+					<div class="step-register">
+						<div class="item-form">
+							<input type="text" placeholder="Ваш номер телефона" class="input-phone" required="required">
+						</div>
+						<div class="item-form">
+							<input type="password" placeholder="Ваш пароль" required="required">
+						</div>
+						<div class="item-form">
+							<input type="password" placeholder="Повторите пароль" required="required">
+						</div>
+						<button class="btn-main next-register">Продолжить</button>
+					</div>
+					<div class="step-register">
+						<div class="item-form">
+							<div class="item-form__title">Дата рождения</div>
+							<input type="text" placeholder="дд.мм.гг" class="input-date" required="required">
+						</div>
+						<div class="item-form">
+							<div class="item-form__title">Ваш пол</div>
+							<div class="genders-wrap">
+								<div class="checkbox">
+									<label>
+										<input type="radio" name="gender" required="required" />
+										<span>Муж</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="radio" name="gender" required="required" />
+										<span>Жен</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="item-form">
+							<div class="item-form__title">Имя</div>
+							<input type="text" placeholder="Ваше имя" required="required">
+						</div>
+						<div class="item-form">
+							<div class="item-form__title">Фамилия</div>
+							<input type="text" placeholder="Ваша фамилия" required="required">
+						</div>
+						<button class="btn-main">Зарегистрироваться</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -377,7 +463,7 @@
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.3"></script>
+<script src="js/common.js?ver=1.4"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script>
 	$(document).ready(function() {

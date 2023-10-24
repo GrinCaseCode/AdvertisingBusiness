@@ -100,86 +100,91 @@
 			<div class="menu-overlay"></div>
 		</header>
 
-		<section class="page-personal">
+		<section class="page-payment">
 			<div class="container">
 				<ul class="breadcrumbs">
-					<li><a href="#">Личный кабинет</a></li>
-					<li>Публикации</li>
+					<li>Корзина</li>
 				</ul>
-				<div class="row">
-					<div class="col-lg-3">
-						<div class="sidebar-personal">
-							<div class="sidebar-personal__head">
-								<div class="sidebar-personal__wrap">
-									<div class="sidebar-personal__image">
-										<img src="img/personal1.jpg" alt="alt">
-									</div>
-									<div class="sidebar-personal__rating">
-										<div class="rating-wrap__value">0,0</div>
-										<div class="rating rating_4">
-											<div class="rating__item"><i class="fas fa-star"></i></div>
-											<div class="rating__item"><i class="fas fa-star"></i></div>
-											<div class="rating__item"><i class="fas fa-star"></i></div>
-											<div class="rating__item"><i class="fas fa-star"></i></div>
-											<div class="rating__item"><i class="fas fa-star"></i></div>
-										</div>
-										<div class="rating-wrap__reviews">Нет отзывов</div>
-									</div>
-								</div>
-								<div class="sidebar-personal__title">Анатолий Васильевич Подосинников</div>
-							</div>
-							<div class="nav-person-wrap">
-								<div class="btn-nav"><i class="far fa-chevron-down"></i></div>
-								<ul class="nav-personal">
-									<li class="active"><a href="#">Кабинет исполнителя</a></li>
-									<li><a href="#">Избранное</a></li>
-									<li><a href="#">История</a></li>
-									<li><a href="#">Отзывы</a></li>
-									<li><a href="#">Сообщения</a></li>
-									<li><a href="#">Уведомления</a></li>
-									<li><a href="#">Кошелек</a></li>
-									<li><a href="#">Платные услуги</a></li>
-									<li><a href="#">Редактирование профиля</a></li>
-									<li><a href="#">Настройки</a></li>
-									<li><a href="#">Выйти</a></li>
+				<h1 class="title-section">Корзина</h1>
+				<div class="payment-block">
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="wallet-block__line">
+								<div class="wallet-block__title">Выберите способ пополнения </div>
+								<ul class="tabs">
+									<li class="active"><a href="#tab_wallet1">Банковская карта</a></li>
+									<li><a href="#tab_wallet2">Сбербанк Онлайн</a></li>
+									<li><a href="#tab_wallet3">QIWI Кошелек</a></li>
 								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-9">
-						<h1 class="title-section">Мои сообщения </h1>
-						<div class="chat-main">
-							<div class="item-chat">
-								<a href="#" class="btn-back"></a>
-								<div class="item-chat__image">
-									<img src="img/chat1.jpg" alt="alt">
-								</div>
-								<div class="item-chat__content">
-									<div class="item-chat__name">Валерия Бойкова <div class="online-status yes"></div></div>
-									<div class="item-chat__descr">Билборды на ул. Семашко перекресток ул. Гагарина, 30 000 ₽/мес </div>
-								</div>
-								<div class="item-chat__date">01 октября 2023</div>
-								<a href="#" class="btn-more"><i class="fas fa-ellipsis-v"></i></a>
-							</div>
-							<div class="chat-wrapper">
-								<div class="item-message item-message_main">
-									<div class="item-message__text">Здравствуйте, Матвей! <div class="time-message">16:43</div><div class="read-status yes"></div></div>
-								</div>
-								<div class="item-message item-message_second">
-									<div class="item-message__image">
-										<img src="img/chat1.jpg" alt="alt">
+								<div class="tab-container tab-container_wallet">
+									<div class="tab-pane" id="tab_wallet1">
+										<div class="item-form">
+											<div class="item-form__title">Номер карты</div>
+											<input type="text" placeholder="хххх хххх хххх хххх" class="input-wallet" required="required">
+										</div>
+										<div class="line-inputs">
+											<div class="item-form">
+												<div class="item-form__title">Месяц Год</div>
+												<input type="text" placeholder="хх:хххх" class="input-monthyear" required="required">
+											</div>
+											<div class="item-form">
+												<div class="item-form__title">CVC</div>
+												<input type="text" placeholder="ххх" class="input-cvc" required="required">
+											</div>
+										</div>
 									</div>
-									<div class="item-message__text">Добрый день, Александр! <div class="time-message">16:43</div><div class="read-status yes"></div></div>
-								</div>
-								<div class="item-message item-message_main">
-									<div class="item-message__text">Подскажите, сколько ждать по времени? <div class="time-message">16:43</div><div class="read-status yes"></div></div>
-								</div>
-								<div class="item-message item-message_main">
-									<div class="item-message__text">Хотел бы арендовать у вас билборд на ул. Пушкина <div class="time-message">16:43</div><div class="read-status yes"></div></div>
+									<div class="tab-pane" id="tab_wallet2">
+										<div class="item-form">
+											<div class="item-form__title">Номер карты</div>
+											<input type="text" placeholder="хххх хххх хххх хххх" class="input-wallet" required="required">
+										</div>
+										<div class="line-inputs">
+											<div class="item-form">
+												<div class="item-form__title">Месяц Год</div>
+												<input type="text" placeholder="хх:хххх" class="input-monthyear" required="required">
+											</div>
+											<div class="item-form">
+												<div class="item-form__title">CVC</div>
+												<input type="text" placeholder="ххх" class="input-cvc" required="required">
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="tab_wallet3">
+										<div class="item-form">
+											<div class="item-form__title">Номер карты</div>
+											<input type="text" placeholder="хххх хххх хххх хххх" class="input-wallet" required="required">
+										</div>
+										<div class="line-inputs">
+											<div class="item-form">
+												<div class="item-form__title">Месяц Год</div>
+												<input type="text" placeholder="хх:хххх" class="input-monthyear" required="required">
+											</div>
+											<div class="item-form">
+												<div class="item-form__title">CVC</div>
+												<input type="text" placeholder="ххх" class="input-cvc" required="required">
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<a href="#" class="btn-main btn-main_addmessage btn-main_block"><i class="fal fa-plus"></i> Написать сообщение</a>
+						<div class="col-lg-4">
+							<div class="sidebar-basket">
+								<div class="sidebar-basket__content">
+									<div class="sidebar-basket__head">
+										<div class="sidebar-basket__name">итого:</div>
+										<div class="price-main">60 000 ₽ </div>
+									</div>
+									<a href="#" class="btn-main">Оплатить онлайн</a>
+								</div>
+								<div class="sidebar-basket__descr">Нажимая на кнопку, вы соглашаетесь с <a href="#">Условиями обработки перс. данных</a>, а также с <a href="#">Условиями продажи</a></div>
+								<div class="sidebar-basket__bottom">
+									<div class="sidebar-basket__title">Ваша корзина:</div>
+									<div class="sidebar-basket__value">Товары (2)</div>
+									<div class="sidebar-basket__value">60 000 ₽</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
