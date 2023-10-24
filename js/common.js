@@ -29,8 +29,24 @@ $(function(){
 		}
 	});
 
+	$(".next-register").click(function(e) {
+		e.preventDefault();
+		$(".step-register:nth-child(1)").fadeOut(0);
+		$(".step-register:nth-child(2)").fadeIn(200);
+	});
 
-$(".btn-nav").click(function() {
+	$(".select-all").click(function(e) {
+		e.preventDefault();
+		if ($('.line-basket .item-checkbox input').is(":checked") == true) { 
+			$('.line-basket .item-checkbox input').prop( "checked", false );
+		} else { 
+			$('.line-basket .item-checkbox input').prop( "checked", true );
+		} 
+		
+	});
+
+
+	$(".btn-nav").click(function() {
 		$(this).toggleClass("active");
 		if ($(".nav-personal li:not(.active)").is(":hidden")) {
 			$(".nav-personal li:not(.active)").slideDown(200);
@@ -246,6 +262,12 @@ $(".btn-nav").click(function() {
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
+	$(".input-date").mask("99.99.99");
+
+	$(".input-wallet").mask("9999 9999 9999 9999");
+
+	$(".input-monthyear").mask("99:9999");
+	$(".input-cvc").mask("999");
 
 	 // стайлер для select
 	 $('select').styler();

@@ -586,6 +586,118 @@
 	.item-form__subdescr {
 		right: 15px;
 	}
+	.line-basket .item-checkbox {
+    margin-right: 30px;
+}
+.item-basket__image {
+    width: 115px;
+    height: 118px;
+    margin-right: 20px;
+    }
+    .item-basket {
+    	padding: 13px;
+    }
+    .item-basket__content {
+    max-width: 432px;
+}	
+.item-basket__title {
+    font-size: 17px;
+    margin-top: 2px;
+    max-width: 245px;
+    margin-bottom: 15px;
+    }
+    .btn-delate {
+    	font-size: 20px;
+    }
+    .sidebar-basket {
+    	top: 100px;
+    }
+    .sidebar-basket__content {
+    padding: 20px 25px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+.sidebar-basket__head {
+    margin-bottom: 40px;
+    }
+    .sidebar-basket__bottom {
+    padding-top: 20px;
+}
+.sidebar-basket__value {
+    font-size: 13px;
+}
+.sidebar-basket__descr {
+    font-size: 11px;
+    padding-bottom: 16px;
+}
+.line-basket {
+	margin-bottom: 23px;
+}
+.page-basket .title-section {
+	padding-bottom: 25px;
+}
+.select-all {
+	margin-bottom: 25px;
+}
+.item-basket__text {
+    font-size: 12px;
+    }
+    .payment-block .tabs {
+    	font-size: 13px;
+    }
+    .payment-block {
+    	padding-right: 60px;
+    }
+    .payment-block .sidebar-basket {
+    	margin-left: 30px;
+    }
+    .tab-container_wallet {
+    	padding-bottom: 10px;
+    }
+    .page-payment .title-section {
+    	padding-bottom: 28px;
+    }
+    .bar-rating {
+    	width: 270px;
+    }
+    .line-rating .rating {
+    	margin-right: 28px;
+    }
+    .recap-block {
+    padding: 42px 160px;
+    padding-bottom: 50px;
+    max-width: 1000px;
+}
+.recap-block__title {
+    font-size: 55px;
+    }
+    .recap-block__descr {
+    font-size: 30px;
+}
+.recap-block__text {
+    font-size: 16px;
+    min-height: 55px;
+    padding-bottom: 20px;
+    max-width: 565px;
+    }
+    .unit-recap {
+    padding: 22px 45px;
+    padding-right: 20px;
+}
+.unit-recap ul li {
+    margin-bottom: 11px;
+    }
+    .unit-recap__title {
+    font-size: 19px;
+    margin-bottom: 11px;
+}
+.recap-block__bottom {
+    padding-top: 35px;
+}
+.recap-block__bottom .btn-main {
+    width: 275px;
+    height: 42px;
+}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -805,6 +917,36 @@
 	.rating-main {
 		margin-bottom: 25px;
 	}
+	.item-basket__content {
+    max-width: 300px;
+}
+.sidebar-basket__content {
+    padding: 20px 15px;
+    padding-bottom: 20px;
+}
+.sidebar-basket__bottom {
+	flex-wrap: wrap;
+}
+.sidebar-basket__title {
+	width: 100%;
+	padding-bottom: 3px;
+}
+.payment-block .sidebar-basket {
+	margin-left: 15px;
+}
+.payment-block {
+	padding: 35px;
+}
+.rating-block {
+	padding: 25px;
+}
+.rating-block .rating-wrap {
+	margin-bottom: 13px;
+}
+.recap-block {
+    padding: 42px 125px;
+    padding-bottom: 50px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -1140,6 +1282,25 @@
 	.nav-person-wrap {
 		position: relative;
 	}
+	.sidebar-basket {
+		position: static;
+		top: 0;
+	}
+	.sidebar-basket__title {
+		width: initial;
+		margin: 0;
+	}
+	.sidebar-basket__content {
+		padding: 20px;
+	}
+	.payment-block .sidebar-basket {
+		margin: 0;
+		margin-top: 15px;
+	}
+	.recap-block {
+    padding: 42px 50px;
+    padding-bottom: 50px;
+}
 }
 
 /* Small Devices, Tablets */
@@ -1341,6 +1502,54 @@
 	.slider-portfolio {
 		padding-bottom: 25px;
 	}
+	.line-basket .item-checkbox {
+    margin-right: 15px;
+}
+.item-basket {
+	flex-wrap: wrap;
+}
+.item-basket__image {
+	margin: 0;
+	margin-bottom: 15px;
+}
+.line-rating .rating {
+	margin-right: 15px;
+}
+#map-catalog {
+	height: 400px;
+}
+.recap-block {
+    padding: 29px 30px;
+    padding-bottom: 35px;
+}
+.unit-recap {
+	padding: 25px;
+	margin-bottom: 25px;
+	min-height: initial;
+}
+.unit-recap__title {
+    font-size: 17px;
+    margin-bottom: 9px;
+}
+.recap-block__title {
+    font-size: 45px;
+}
+.recap-block__descr {
+    font-size: 24px;
+}
+.recap-block__text {
+    font-size: 14px;
+    min-height: 52px;
+    padding-bottom: 17px;
+    max-width: 525px;
+}
+.recap-block__bottom {
+	padding-top: 15px;
+}
+.page-recap {
+	padding-top: 35px;
+	padding-bottom: 50px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -1475,6 +1684,62 @@
 		left: 0;
 		position: relative;
 	}
+	.title-modal {
+    font-size: 21px;
+    padding-bottom: 17px;
+}
+.modal-wrap {
+	padding: 25px;
+}
+.item-basket__right {
+	padding-top: 12px;
+	display: block;
+	width: 100%;
+	text-align: left;
+	margin: 0;
+}
+.item-basket .btn-delate {
+	top: 15px;
+	right: 15px;
+	position: absolute;
+}
+.item-basket {
+	position: relative;
+}
+.sidebar-basket__bottom {
+	padding-top: 15px;
+}
+.page-basket {
+	padding-bottom: 45px;
+}
+.item-basket__title {
+    font-size: 15px;
+    }
+    .payment-block {
+    	padding: 20px 15px;
+    }
+    .payment-block .tabs {
+    font-size: 11px;
+}
+.page-payment {
+	padding-bottom: 40px;
+}
+.btn-main_addmessage {
+	padding-right: 25px;
+}
+.btn-main_addmessage i {
+    font-size: 17px;
+    margin-right: 9px;
+}
+#map-catalog {
+	height: 350px;
+}
+.recap-block__text br {
+	display: none;
+}
+.recap-block__bottom {
+	padding-top: 5px;
+}
 }
 
 /* Custom, iPhone Retina */
